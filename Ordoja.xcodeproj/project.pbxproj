@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A966ADD91ABEE5B3005FAD4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A966ADD81ABEE5B3005FAD4D /* AppDelegate.m */; };
+		A966ADDB1ABEE5B3005FAD4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A966ADDA1ABEE5B3005FAD4D /* main.m */; };
+		A966ADDD1ABEE5B3005FAD4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A966ADDC1ABEE5B3005FAD4D /* Images.xcassets */; };
+		A966ADE01ABEE5B3005FAD4D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A966ADDE1ABEE5B3005FAD4D /* MainMenu.xib */; };
+		A966ADEC1ABEE5B3005FAD4D /* OrdojaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A966ADEB1ABEE5B3005FAD4D /* OrdojaTests.m */; };
+		A966ADFA1ABEE767005FAD4D /* OrdojaDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A966ADF91ABEE767005FAD4D /* OrdojaDrop.m */; };
+		A9CFFC391ABEF81C00D42DE9 /* OrdojaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFFC381ABEF81C00D42DE9 /* OrdojaManager.m */; };
+		A9CFFC3D1ABEF91800D42DE9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CFFC3A1ABEF90500D42DE9 /* libz.dylib */; };
+		A9CFFC4C1ABEF93C00D42DE9 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A9CFFC421ABEF93C00D42DE9 /* ioapi.c */; };
+		A9CFFC4D1ABEF93C00D42DE9 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = A9CFFC441ABEF93C00D42DE9 /* mztools.c */; };
+		A9CFFC4E1ABEF93C00D42DE9 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A9CFFC461ABEF93C00D42DE9 /* unzip.c */; };
+		A9CFFC4F1ABEF93C00D42DE9 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = A9CFFC481ABEF93C00D42DE9 /* zip.c */; };
+		A9CFFC501ABEF93C00D42DE9 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CFFC4B1ABEF93C00D42DE9 /* SSZipArchive.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A966ADE61ABEE5B3005FAD4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A966ADCA1ABEE5B3005FAD4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A966ADD11ABEE5B3005FAD4D;
+			remoteInfo = Ordoja;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A966ADD21ABEE5B3005FAD4D /* Ordoja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ordoja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A966ADD61ABEE5B3005FAD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A966ADD71ABEE5B3005FAD4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A966ADD81ABEE5B3005FAD4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A966ADDA1ABEE5B3005FAD4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A966ADDC1ABEE5B3005FAD4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A966ADDF1ABEE5B3005FAD4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A966ADE51ABEE5B3005FAD4D /* OrdojaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdojaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A966ADEA1ABEE5B3005FAD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A966ADEB1ABEE5B3005FAD4D /* OrdojaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrdojaTests.m; sourceTree = "<group>"; };
+		A966ADF81ABEE767005FAD4D /* OrdojaDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdojaDrop.h; sourceTree = "<group>"; };
+		A966ADF91ABEE767005FAD4D /* OrdojaDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdojaDrop.m; sourceTree = "<group>"; };
+		A9CFFC371ABEF81C00D42DE9 /* OrdojaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdojaManager.h; sourceTree = "<group>"; };
+		A9CFFC381ABEF81C00D42DE9 /* OrdojaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdojaManager.m; sourceTree = "<group>"; };
+		A9CFFC3A1ABEF90500D42DE9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A9CFFC411ABEF93C00D42DE9 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		A9CFFC421ABEF93C00D42DE9 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		A9CFFC431ABEF93C00D42DE9 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		A9CFFC441ABEF93C00D42DE9 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		A9CFFC451ABEF93C00D42DE9 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		A9CFFC461ABEF93C00D42DE9 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		A9CFFC471ABEF93C00D42DE9 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		A9CFFC481ABEF93C00D42DE9 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		A9CFFC491ABEF93C00D42DE9 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		A9CFFC4A1ABEF93C00D42DE9 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		A9CFFC4B1ABEF93C00D42DE9 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A966ADCF1ABEE5B3005FAD4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CFFC3D1ABEF91800D42DE9 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A966ADE21ABEE5B3005FAD4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A966ADC91ABEE5B2005FAD4D = {
+			isa = PBXGroup;
+			children = (
+				A9CFFC3E1ABEF93300D42DE9 /* Classes */,
+				A9CFFC3C1ABEF90C00D42DE9 /* Libraries */,
+				A966ADD41ABEE5B3005FAD4D /* Ordoja */,
+				A966ADE81ABEE5B3005FAD4D /* OrdojaTests */,
+				A966ADD31ABEE5B3005FAD4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A966ADD31ABEE5B3005FAD4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A966ADD21ABEE5B3005FAD4D /* Ordoja.app */,
+				A966ADE51ABEE5B3005FAD4D /* OrdojaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A966ADD41ABEE5B3005FAD4D /* Ordoja */ = {
+			isa = PBXGroup;
+			children = (
+				A966ADD71ABEE5B3005FAD4D /* AppDelegate.h */,
+				A966ADD81ABEE5B3005FAD4D /* AppDelegate.m */,
+				A966ADF81ABEE767005FAD4D /* OrdojaDrop.h */,
+				A966ADF91ABEE767005FAD4D /* OrdojaDrop.m */,
+				A9CFFC371ABEF81C00D42DE9 /* OrdojaManager.h */,
+				A9CFFC381ABEF81C00D42DE9 /* OrdojaManager.m */,
+				A966ADDC1ABEE5B3005FAD4D /* Images.xcassets */,
+				A966ADDE1ABEE5B3005FAD4D /* MainMenu.xib */,
+				A966ADD51ABEE5B3005FAD4D /* Supporting Files */,
+			);
+			path = Ordoja;
+			sourceTree = "<group>";
+		};
+		A966ADD51ABEE5B3005FAD4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A966ADD61ABEE5B3005FAD4D /* Info.plist */,
+				A966ADDA1ABEE5B3005FAD4D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A966ADE81ABEE5B3005FAD4D /* OrdojaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A966ADEB1ABEE5B3005FAD4D /* OrdojaTests.m */,
+				A966ADE91ABEE5B3005FAD4D /* Supporting Files */,
+			);
+			path = OrdojaTests;
+			sourceTree = "<group>";
+		};
+		A966ADE91ABEE5B3005FAD4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A966ADEA1ABEE5B3005FAD4D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9CFFC3C1ABEF90C00D42DE9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFFC3A1ABEF90500D42DE9 /* libz.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		A9CFFC3E1ABEF93300D42DE9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFFC3F1ABEF93C00D42DE9 /* SSZipArchive */,
+			);
+			name = Classes;
+			path = Ordoja/Classes;
+			sourceTree = "<group>";
+		};
+		A9CFFC3F1ABEF93C00D42DE9 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFFC401ABEF93C00D42DE9 /* minizip */,
+				A9CFFC4A1ABEF93C00D42DE9 /* SSZipArchive.h */,
+				A9CFFC4B1ABEF93C00D42DE9 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		A9CFFC401ABEF93C00D42DE9 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				A9CFFC411ABEF93C00D42DE9 /* crypt.h */,
+				A9CFFC421ABEF93C00D42DE9 /* ioapi.c */,
+				A9CFFC431ABEF93C00D42DE9 /* ioapi.h */,
+				A9CFFC441ABEF93C00D42DE9 /* mztools.c */,
+				A9CFFC451ABEF93C00D42DE9 /* mztools.h */,
+				A9CFFC461ABEF93C00D42DE9 /* unzip.c */,
+				A9CFFC471ABEF93C00D42DE9 /* unzip.h */,
+				A9CFFC481ABEF93C00D42DE9 /* zip.c */,
+				A9CFFC491ABEF93C00D42DE9 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A966ADD11ABEE5B3005FAD4D /* Ordoja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A966ADEF1ABEE5B3005FAD4D /* Build configuration list for PBXNativeTarget "Ordoja" */;
+			buildPhases = (
+				A966ADCE1ABEE5B3005FAD4D /* Sources */,
+				A966ADCF1ABEE5B3005FAD4D /* Frameworks */,
+				A966ADD01ABEE5B3005FAD4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ordoja;
+			productName = Ordoja;
+			productReference = A966ADD21ABEE5B3005FAD4D /* Ordoja.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A966ADE41ABEE5B3005FAD4D /* OrdojaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A966ADF21ABEE5B3005FAD4D /* Build configuration list for PBXNativeTarget "OrdojaTests" */;
+			buildPhases = (
+				A966ADE11ABEE5B3005FAD4D /* Sources */,
+				A966ADE21ABEE5B3005FAD4D /* Frameworks */,
+				A966ADE31ABEE5B3005FAD4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A966ADE71ABEE5B3005FAD4D /* PBXTargetDependency */,
+			);
+			name = OrdojaTests;
+			productName = OrdojaTests;
+			productReference = A966ADE51ABEE5B3005FAD4D /* OrdojaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A966ADCA1ABEE5B3005FAD4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Majd Alfhaily";
+				TargetAttributes = {
+					A966ADD11ABEE5B3005FAD4D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A966ADE41ABEE5B3005FAD4D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A966ADD11ABEE5B3005FAD4D;
+					};
+				};
+			};
+			buildConfigurationList = A966ADCD1ABEE5B3005FAD4D /* Build configuration list for PBXProject "Ordoja" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A966ADC91ABEE5B2005FAD4D;
+			productRefGroup = A966ADD31ABEE5B3005FAD4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A966ADD11ABEE5B3005FAD4D /* Ordoja */,
+				A966ADE41ABEE5B3005FAD4D /* OrdojaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A966ADD01ABEE5B3005FAD4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A966ADDD1ABEE5B3005FAD4D /* Images.xcassets in Resources */,
+				A966ADE01ABEE5B3005FAD4D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A966ADE31ABEE5B3005FAD4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A966ADCE1ABEE5B3005FAD4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CFFC391ABEF81C00D42DE9 /* OrdojaManager.m in Sources */,
+				A9CFFC4F1ABEF93C00D42DE9 /* zip.c in Sources */,
+				A9CFFC501ABEF93C00D42DE9 /* SSZipArchive.m in Sources */,
+				A9CFFC4E1ABEF93C00D42DE9 /* unzip.c in Sources */,
+				A966ADFA1ABEE767005FAD4D /* OrdojaDrop.m in Sources */,
+				A9CFFC4D1ABEF93C00D42DE9 /* mztools.c in Sources */,
+				A966ADDB1ABEE5B3005FAD4D /* main.m in Sources */,
+				A966ADD91ABEE5B3005FAD4D /* AppDelegate.m in Sources */,
+				A9CFFC4C1ABEF93C00D42DE9 /* ioapi.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A966ADE11ABEE5B3005FAD4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A966ADEC1ABEE5B3005FAD4D /* OrdojaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A966ADE71ABEE5B3005FAD4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A966ADD11ABEE5B3005FAD4D /* Ordoja */;
+			targetProxy = A966ADE61ABEE5B3005FAD4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A966ADDE1ABEE5B3005FAD4D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A966ADDF1ABEE5B3005FAD4D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A966ADED1ABEE5B3005FAD4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A966ADEE1ABEE5B3005FAD4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A966ADF01ABEE5B3005FAD4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ordoja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A966ADF11ABEE5B3005FAD4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ordoja/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A966ADF31ABEE5B3005FAD4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OrdojaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ordoja.app/Contents/MacOS/Ordoja";
+			};
+			name = Debug;
+		};
+		A966ADF41ABEE5B3005FAD4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OrdojaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ordoja.app/Contents/MacOS/Ordoja";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A966ADCD1ABEE5B3005FAD4D /* Build configuration list for PBXProject "Ordoja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A966ADED1ABEE5B3005FAD4D /* Debug */,
+				A966ADEE1ABEE5B3005FAD4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A966ADEF1ABEE5B3005FAD4D /* Build configuration list for PBXNativeTarget "Ordoja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A966ADF01ABEE5B3005FAD4D /* Debug */,
+				A966ADF11ABEE5B3005FAD4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A966ADF21ABEE5B3005FAD4D /* Build configuration list for PBXNativeTarget "OrdojaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A966ADF31ABEE5B3005FAD4D /* Debug */,
+				A966ADF41ABEE5B3005FAD4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A966ADCA1ABEE5B3005FAD4D /* Project object */;
+}
